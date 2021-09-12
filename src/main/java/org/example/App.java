@@ -17,7 +17,7 @@ public class App
         System.out.print( "What is the state? " );
         String st = scnN.next();
         double preTax = amnt;
-        amnt = Math.ceil(amnt);
+        amnt = Math.ceil(amnt*10d)/10d;
         if(st.equals("WI")){
             double tax = preTax*0.055;
             System.out.print( "The subtotal is $"+ String.format("%.2f", preTax) +
