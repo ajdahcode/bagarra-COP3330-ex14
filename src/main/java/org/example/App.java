@@ -22,7 +22,7 @@ public class App
             double tax = preTax*0.055;
             System.out.print( "The subtotal is $"+ String.format("%.2f", preTax) +
                 "\nThe tax is $"+ String.format("%.2f", tax) + "\n");
-            amnt = tax+preTax;
+            amnt = Math.ceil((tax+preTax)*10d)/10d;
         }
         System.out.format("The total is $%.2f", amnt);
     }
